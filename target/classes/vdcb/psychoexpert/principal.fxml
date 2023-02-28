@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vdcb.psychoexpert.Principal">
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0">
+         <children>
+            <ImageView fitHeight="445.0" fitWidth="460.0" layoutX="93.0" layoutY="129.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/cerebrito.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Universidad" layoutX="103.0" layoutY="150.0" prefHeight="32.0" prefWidth="445.0" text="Universidad Aútonoma del Estado de Hidalgo">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="icbi" layoutX="124.0" layoutY="189.0" prefHeight="32.0" prefWidth="403.0" text="Instituto de Ciencias Básicas e Ingeniería">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="area" layoutX="81.0" layoutY="230.0" prefHeight="32.0" prefWidth="489.0" text="Área Academica de Comunicaciones y Electronica">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="262.0" prefHeight="32.0" prefWidth="415.0" text="Licenciatura en Ciencias Computacionales">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="124.0" layoutY="293.0" prefHeight="32.0" prefWidth="403.0" text="Profesora: Martha Idalid Rivera Gonzalez">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="115.0" layoutY="336.0" prefHeight="32.0" prefWidth="437.0" text="Sistema Experto para Evaluación Psicologica ">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="255.0" layoutY="377.0" prefHeight="32.0" prefWidth="122.0" text="Integrantes:">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="157.0" layoutY="409.0" prefHeight="32.0" prefWidth="318.0" text="Flores Hernandez Yuritza Vianey">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="154.0" layoutY="441.0" prefHeight="32.0" prefWidth="318.0" text="Gutierrez Orellan Diego Alberto">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="157.0" layoutY="474.0" prefHeight="32.0" prefWidth="288.0" text="Lazcano Valdez César Ricardo" textAlignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="157.0" layoutY="506.0" prefHeight="32.0" prefWidth="288.0" text="Rivero Sanchez Luis Brandon">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="293.0" layoutY="538.0" prefHeight="32.0" prefWidth="40.0" text="6°1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnClose" layoutX="7.0" layoutY="601.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="43.0" prefWidth="44.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="33.0">
+                     <image>
+                        <Image url="@images/cerrar-sesion.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnNewuser1" layoutX="585.0" layoutY="601.0" mnemonicParsing="false" onAction="#registro" prefHeight="43.0" prefWidth="44.0">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/agregar-usuario.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnNewuser" layoutX="527.0" layoutY="601.0" mnemonicParsing="false" onAction="#modificar" prefHeight="43.0" prefWidth="44.0">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/modificar.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/uaeh.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="450.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

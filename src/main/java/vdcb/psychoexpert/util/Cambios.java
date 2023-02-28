@@ -1,0 +1,6 @@
+package vdcb.psychoexpert.util;
+
+public enum Cambios{
+        INICIAR_SESION, CERRAR_SESION, REGISTRAR_NUEVO, REGISTRAR_NUEVO_USUARIO,
+        NUEVO_CREADO, CANCELAR_REGISTRO, MODIFICAR
+}
