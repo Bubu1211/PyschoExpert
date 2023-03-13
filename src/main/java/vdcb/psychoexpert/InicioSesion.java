@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -63,7 +61,6 @@ public class InicioSesion implements Initializable{
                     "El siguiente error ha ocurrido intentando hacer la conexión\n"+ex.getSQLState());
             System.out.println("SQLState: "+ex.getSQLState());
             System.out.println(ex.getMessage());
-            ex.printStackTrace();
         } catch (IOException ex) {
             App.alertError("Error abriendo la aplicación", "Ocurrió un error al iniciar Sesión");
         }

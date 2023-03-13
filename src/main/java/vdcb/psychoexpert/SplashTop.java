@@ -21,6 +21,7 @@ public class SplashTop implements Initializable{
     public void initialize(URL url, ResourceBundle rb) {
         var origen = App.getMensajePersistente("origen");
         
+        
         Thread progress = new Thread(){
             @Override 
             public void run(){
