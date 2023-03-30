@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/usuario.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="100.0" prefWidth="555.0" style="-fx-background-color: #b695c0;">
+               <children>
+                  <Label layoutX="6.0" layoutY="14.0" text="Usuario:">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="94.0" style="-fx-background-color: #b695c0;">
+               <children>
+                  <ImageView fitHeight="101.0" fitWidth="114.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/cerebrito.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TabPane prefHeight="619.0" prefWidth="750.0" style="-fx-background-color: #81638b; -fx-border-color: #503459; -fx-border-width: 3;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab style="-fx-background-color: #dac9df; -fx-border-color: #503459; -fx-border-radius: 6;" text="Inicio">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="99.0" layoutY="72.0" prefHeight="402.0" prefWidth="542.0">
+                           <children>
+                              <SplitPane dividerPositions="0.5" layoutY="-2.0" orientation="VERTICAL" prefHeight="403.0" prefWidth="541.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #dac9df;">
+                                       <children>
+                                          <Label layoutX="1.0" layoutY="1.0" text="Sesiones proximas..">
+                                             <font>
+                                                <Font name="Barlow Condensed Regular" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <ListView layoutY="27.0" prefHeight="171.0" prefWidth="541.0" style="-fx-background-color: #dac9df; -fx-border-color: #91596d;" />
+                                          <ScrollBar layoutX="518.0" layoutY="27.0" orientation="VERTICAL" prefHeight="170.0" prefWidth="21.0" style="-fx-background-color: #f5e1ce; -fx-border-color: #91596d;" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #dac9df;">
+                                       <children>
+                                          <Label layoutX="1.0" layoutY="1.0" prefHeight="26.0" prefWidth="177.0" text="Abierto Recientemente">
+                                             <font>
+                                                <Font name="Barlow Condensed Regular" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <ListView layoutY="27.0" prefHeight="171.0" prefWidth="539.0" style="-fx-background-color: #dac9df; -fx-border-color: #91596d;" />
+                                          <ScrollBar layoutX="517.0" layoutY="27.0" orientation="VERTICAL" prefHeight="170.0" prefWidth="21.0" style="-fx-background-color: #f5e1ce; -fx-border-color: #91596d;" />
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                     </children></Pane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #dac9df; -fx-border-color: #503459; -fx-border-radius: 6;" text="Pacientes">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="7.0" layoutY="9.0" prefHeight="39.0" prefWidth="728.0" style="-fx-background-color: #dac9df;">
+                           <children>
+                              <Label layoutX="7.0" layoutY="7.0" prefHeight="30.0" prefWidth="230.0" text="Lista de Pacientes">
+                                 <font>
+                                    <Font name="Barlow Condensed Regular" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <TableView layoutX="7.0" layoutY="56.0" prefHeight="473.0" prefWidth="727.0">
+                          <columns>
+                            <TableColumn prefWidth="163.3333225250244" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Nombre" />
+                              <TableColumn prefWidth="164.66665649414062" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Apellidos" />
+                              <TableColumn prefWidth="70.6666259765625" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Edad" />
+                              <TableColumn prefWidth="220.0001220703125" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Correo Electronico" />
+                              <TableColumn prefWidth="106.33331298828125" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Proxima Sesión" />
+                          </columns>
+                        </TableView>
+                     </children></Pane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #dac9df; -fx-border-color: #503459; -fx-border-radius: 6;" text="Prueba Ottis Gamma">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="9.0" layoutY="12.0" prefHeight="520.0" prefWidth="726.0" style="-fx-border-color: #724564; -fx-border-width: 5;">
+                          <columns>
+                            <TableColumn prefWidth="151.3332929611206" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Paciente" />
+                            <TableColumn prefWidth="129.33334350585938" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Estado de Test" />
+                              <TableColumn prefWidth="191.3333740234375" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Fecha de Inicio de Test" />
+                              <TableColumn prefWidth="136.666748046875" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Tiempo de Prueba" />
+                              <TableColumn prefWidth="108.6666259765625" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Puntaje" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #dac9df; -fx-border-color: #503459; -fx-border-radius: 6;" text="Prueba del Árbol">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="14.0" layoutY="14.0" prefHeight="513.0" prefWidth="716.0" style="-fx-border-color: #724564; -fx-border-width: 5;">
+                          <columns>
+                            <TableColumn prefWidth="157.33332347869873" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Paciente" />
+                            <TableColumn prefWidth="169.33328247070312" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Estado" />
+                              <TableColumn prefWidth="169.33334350585938" style="-fx-background-color: #e8c39e; -fx-border-color: #91596d;" text="Resultados" />
+                          </columns>
+                        </TableView>
+                     </children></Pane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #dac9df; -fx-border-color: #503459; -fx-border-radius: 6;" text="Calendario de Citas">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <DatePicker layoutX="285.0" layoutY="71.0" />
+                     </children></Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="68.0" prefWidth="750.0" style="-fx-background-color: #b695c0;" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #dac9df; -fx-background-radius: 8; -fx-border-color: #503459; -fx-border-width: 2; -fx-border-radius: 8;">
+               <font>
+                  <Font name="Barlow Condensed Regular" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@images/cerrar-sesion.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vdcb.psychoexpert.PacienteControl">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/usuario.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="100.0" prefWidth="555.0" style="-fx-background-color: #b695c0;">
+               <children>
+                  <Label layoutX="6.0" layoutY="14.0" text="Paciente:">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="22.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="94.0" style="-fx-background-color: #b695c0;">
+               <children>
+                  <ImageView fitHeight="101.0" fitWidth="114.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/cerebrito.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TabPane prefHeight="619.0" prefWidth="750.0" style="-fx-background-color: #81638b; -fx-border-color: #503459; -fx-border-width: 3;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab style="-fx-background-color: #dac9df; -fx-border-color: #503459; -fx-border-radius: 6;" text="Inicio">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5" layoutX="45.0" layoutY="104.0" orientation="VERTICAL" prefHeight="385.0" prefWidth="657.0" style="-fx-border-color: #724564;">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="653.0" style="-fx-background-color: #dac9df;">
+                                 <children>
+                                    <ScrollBar layoutX="631.0" orientation="VERTICAL" prefHeight="186.0" prefWidth="23.0" style="-fx-border-color: #91596d; -fx-background-color: #f5e1ce;" />
+                                    <ListView layoutX="1.0" layoutY="26.0" prefHeight="161.0" prefWidth="629.0" style="-fx-background-color: #dac9df;" />
+                                    <Label layoutY="-2.0" text="Citas Proximas">
+                                       <font>
+                                          <Font name="Barlow Condensed Regular" size="22.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="653.0" style="-fx-background-color: #dac9df;">
+                                 <children>
+                                    <Label layoutX="4.0" text="Pruebas Pendientes">
+                                       <font>
+                                          <Font name="Barlow Condensed Regular" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <ListView layoutX="-1.0" layoutY="31.0" prefHeight="156.0" prefWidth="632.0" style="-fx-background-color: #dac9df;" />
+                                    <ScrollBar layoutX="632.0" layoutY="2.0" orientation="VERTICAL" prefHeight="186.0" prefWidth="23.0" style="-fx-background-color: #f5e1ce; -fx-border-color: #91596d;" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #dac9df; -fx-border-color: #503459; -fx-border-radius: 6;" text="Datos Generales">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.29797979797979796" layoutX="11.0" layoutY="11.0" prefHeight="550.0" prefWidth="722.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #f5e1ce;">
+                                 <children>
+                                    <SplitPane dividerPositions="0.7492711370262392" orientation="VERTICAL" prefHeight="231.0" prefWidth="211.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #c48a80;">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="178.0" layoutX="29.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@images/usuario.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="54.0" prefWidth="209.0" style="-fx-background-color: #f5e1ce;">
+                                             <children>
+                                                <Label layoutX="43.0" layoutY="14.0" text="Nombre Completo">
+                                                   <font>
+                                                      <Font name="Barlow Condensed Regular" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #f5e1ce;">
+                                 <children>
+                                    <Label layoutX="36.0" layoutY="28.0" prefHeight="26.0" prefWidth="105.0" text="Edad:">
+                                       <font>
+                                          <Font name="Barlow Condensed Regular" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="36.0" layoutY="74.0" prefHeight="26.0" prefWidth="249.0" text="Telefono:">
+                                       <font>
+                                          <Font name="Barlow Condensed Regular" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="36.0" layoutY="122.0" prefHeight="26.0" prefWidth="444.0" text="Dirección: ">
+                                       <font>
+                                          <Font name="Barlow Condensed Regular" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="36.0" layoutY="166.0" prefHeight="26.0" prefWidth="453.0" text="Correo Electronico:">
+                                       <font>
+                                          <Font name="Barlow Condensed Regular" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="36.0" layoutY="209.0" prefHeight="26.0" prefWidth="390.0" text="Fecha de Ingreso:">
+                                       <font>
+                                          <Font name="Barlow Condensed Regular" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="36.0" layoutY="255.0" prefHeight="26.0" prefWidth="429.0" text="Terapeuta asignado:">
+                                       <font>
+                                          <Font name="Barlow Condensed Regular" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane layoutX="27.0" layoutY="409.0" prefHeight="97.0" prefWidth="448.0">
+                                       <children>
+                                          <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="72.0" style="-fx-background-color: #b695c0; -fx-background-radius: 16;">
+                                             <graphic>
+                                                <ImageView fx:id="btnLimpiar" fitHeight="50.0" fitWidth="50.0">
+                                                   <image>
+                                                      <Image url="@images/limpiar.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button layoutX="188.0" layoutY="13.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="72.0" style="-fx-background-color: #b695c0; -fx-background-radius: 16;">
+                                             <graphic>
+                                                <ImageView fx:id="btnModificar" fitHeight="50.0" fitWidth="50.0">
+                                                   <image>
+                                                      <Image url="@images/modificar.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button layoutX="362.0" layoutY="13.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="72.0" style="-fx-background-radius: 16; -fx-background-color: #b695c0;">
+                                             <graphic>
+                                                <ImageView fx:id="btnGuardar" fitHeight="50.0" fitWidth="50.0">
+                                                   <image>
+                                                      <Image url="@images/guardar.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #dac9df; -fx-border-color: #503459; -fx-border-radius: 6;" text="Calendario de Citas">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #dac9df; -fx-border-color: #503459; -fx-border-radius: 6;" text="Prueba Ottis Gamma">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="20.0" layoutY="22.0" prefHeight="509.0" prefWidth="706.0">
+                           <children>
+                              <HBox prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: #dac9df;">
+                                 <children>
+                                    <Label text="Tiempo Restante:">
+                                       <font>
+                                          <Font name="Barlow Condensed Regular" size="22.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <ScrollPane prefHeight="409.0" prefWidth="706.0" />
+                              <HBox prefHeight="60.0" prefWidth="706.0">
+                                 <children>
+                                    <Pane prefHeight="99.0" prefWidth="349.0">
+                                       <children>
+                                          <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#iniciarTest" style="-fx-background-color: #f5e1ce;" text="Iniciar">
+                                             <font>
+                                                <Font name="Barlow Condensed Regular" size="20.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="10.0" layoutY="10.0" prefHeight="99.0" prefWidth="361.0">
+                                       <children>
+                                          <Button layoutX="275.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #f5e1ce;" text="Enviar">
+                                             <font>
+                                                <Font name="Barlow Condensed Regular" size="20.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #dac9df; -fx-border-color: #503459; -fx-border-radius: 6;" text="Prueba del Árbol">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="20.0" layoutY="22.0" prefHeight="509.0" prefWidth="706.0">
+                           <children>
+                              <ScrollPane prefHeight="409.0" prefWidth="706.0" />
+                              <HBox prefHeight="60.0" prefWidth="706.0">
+                                 <children>
+                                    <Pane prefHeight="99.0" prefWidth="349.0">
+                                       <children>
+                                          <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #f5e1ce;" text="Cargar imagen ">
+                                             <font>
+                                                <Font name="Barlow Condensed Regular" size="20.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="10.0" layoutY="10.0" prefHeight="99.0" prefWidth="361.0">
+                                       <children>
+                                          <Button layoutX="275.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #f5e1ce;" text="Enviar">
+                                             <font>
+                                                <Font name="Barlow Condensed Regular" size="20.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #dac9df; -fx-border-color: #503459; -fx-border-radius: 6;" text="Puntaje">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="72.0" prefWidth="750.0" style="-fx-background-color: #b695c0;" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button mnemonicParsing="false" prefHeight="61.0" prefWidth="40.0" style="-fx-background-color: #dac9df; -fx-background-radius: 8; -fx-border-color: #503459; -fx-border-width: 2; -fx-border-radius: 8;">
+               <font>
+                  <Font name="Barlow Condensed Regular" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@images/cerrar-sesion.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

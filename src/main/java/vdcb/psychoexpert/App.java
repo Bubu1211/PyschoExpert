@@ -20,18 +20,16 @@ public class App extends Application {
 
     private static Scene scene;
     private static Stage stage;
-
-    public static final String InicioSesion = "iniciosesion";
-    public static final String Principal = "principal";
-    public static final String RegistroUsuarios = "registrousuario";
-    public static final String SplashTop = "splashtop";
+    
+    public static final String PantallaInicio = "PantallaInicio";
+    public static final String InterfazPacientes = "interfazPacientes";
     public static Mensajes mensajes;
 
     @Override
     public void start(Stage stage) throws IOException {
         mensajes = new Mensajes();
 
-        var pane = loadFXML(App.InicioSesion);
+        var pane = loadFXML(App.InterfazPacientes);
         scene = new Scene(pane, pane.getPrefWidth(), pane.getPrefHeight());
         App.stage = stage;
         App.stage.setScene(scene);
